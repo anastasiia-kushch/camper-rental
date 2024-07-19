@@ -1,5 +1,7 @@
+@import './shared/style/_colors.css';
+
 body {
-  font-family: 'Iner', sans-serif;
+  font-family: 'Inеer', sans-serif;
   color: black;
   background-color: #ffffff;
 }

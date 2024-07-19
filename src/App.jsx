@@ -1,6 +1,5 @@
 import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Button } from './components/Button/Button.jsx';
 
 const HomePage = lazy(() => import('../src/pages/HomePage/HomePage.jsx'));
 const CatalogPage = lazy(() =>
@@ -16,7 +15,6 @@ const NotFoundPage = lazy(() =>
 function App() {
   return (
     <div>
-      <Button type={'loadMore'} text={'Load more'} />
       <Suspense fallback={<div>LOADING...</div>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
