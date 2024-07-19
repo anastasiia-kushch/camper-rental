@@ -1,0 +1,29 @@
+.button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  border-radius: 200px;
+}
+
+.search {
+  padding: 16px 60px;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.search:hover,
+.search:focus {
+  background-color: var(--dark-red);
+}
+
+.loadMore {
+  padding: 16px 32px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  color: var(--dark-blue);
+}
+
+.loadMore:hover,
+.loadMore:focus {
+  border-color: var(--red);
+}
