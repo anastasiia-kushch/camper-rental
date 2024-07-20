@@ -1,0 +1,34 @@
+.container {
+  padding-top: 280px;
+  padding-left: 24px;
+  color: var(--white);
+  text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 46px;
+}
+
+.benefits {
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 20px; /* Добавляем отступ, чтобы маркеры не прилегали к тексту */
+  margin-left: 8px;
+}
+
+.benefits li {
+  list-style-type: circle; /* Устанавливаем кружочек для всех элементов списка */
+}
+
+.spanCamp {
+  color: #fba06f;
+}
+
+.span {
+  color: #a5f2f1;
+}

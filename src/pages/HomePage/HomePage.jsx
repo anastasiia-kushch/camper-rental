@@ -1,3 +1,11 @@
+import Home from '../../components/Home/Home';
+import Video from '../../components/Video/Video';
+
 export default function HomePage() {
-  return <div></div>;
+  return (
+    <div>
+      <Video />
+      <Home />
+    </div>
+  );
 }
