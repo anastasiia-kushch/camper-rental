@@ -1,0 +1,5 @@
+.cont {
+  padding: 100px 65px;
+  display: flex;
+  gap: 64px;
+}

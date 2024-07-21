@@ -1,0 +1,32 @@
+.cont {
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  display: flex;
+  gap: 24px;
+}
+
+.img {
+  width: 290px;
+  height: 310px;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstSec {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.secondSec {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}

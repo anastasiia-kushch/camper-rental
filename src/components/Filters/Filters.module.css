@@ -1,0 +1,115 @@
+.formCont {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.filtersCont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.label {
+  color: rgba(16, 24, 40, 0.6);
+  font-weight: 500;
+}
+
+.locationCont {
+  margin-top: 8px;
+  position: relative;
+}
+
+.locationIcon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+.filtersTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  color: rgba(71, 84, 103, 1);
+}
+
+.vehicleTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hr {
+  border: 0;
+  border-top: 2px solid rgba(16, 24, 40, 0.1);
+  width: 360px;
+  margin-left: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.locationInput {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 218px 18px 44px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #101828;
+  font-family: inherit;
+}
+
+.hiddenCheckbox {
+  display: none;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.equipmentList {
+  display: grid;
+  grid-template-columns: 112px 115px 113px;
+  grid-auto-rows: 95px;
+  gap: 10px 8px;
+  margin-bottom: 32px;
+}
+
+.typeList {
+  display: grid;
+  grid-template-columns: 100px 128px 112px;
+  grid-auto-rows: 95px;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 95px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.checkedItem {
+  border-color: #ff6347;
+}
+
+.button {
+  background-color: var(--red);
+  border: none;
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: min-content;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white);
+}
