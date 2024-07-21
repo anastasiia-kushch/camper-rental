@@ -1,28 +1,35 @@
 import css from './CamperItem.module.css';
 import { Button } from '../Button/Button.jsx';
 
-export default function CamperItem({ ...data }) {
+export default function CamperItem({ data }) {
+  const { name, price, image, rating, location, description, features } = data;
+
   return (
     <div className={css.cont}>
-      <img src="{}" className={css.img} alt="camper" />
+      <img src={image} className={css.img} alt="camper" />
       <div className={css.content}>
         <div className={css.firstSec}>
-          <p>{data.name}</p>
-          <p>{data.price}</p>
+          <p>{name}</p>
+          <p>{price}</p>
         </div>
         <div className={css.secondSec}>
           <div className={css.rating}>
             {/* {icon} */}
-            <p>rating</p>
+            <p>{rating || 'No rating'}</p>
           </div>
-          <p>location</p>
+          <p>{location || 'No location'}</p>
         </div>
         <p className={css.description}>
-          Embrace simplicity and freedom with the Mavericks panel truck, an
-          ideal choice for solo travelers or couples seeking a compact and
-          efficient way to explore the open roads.
+          {description || 'No description available'}
         </p>
-        <div className={css.features}></div>
+        <div className={css.features}>
+          {features &&
+            features.map((feature, index) => (
+              <div key={index} className={css.feature}>
+                {feature}
+              </div>
+            ))}
+        </div>
         <Button type={'showMore'} text={'Show more'} />
       </div>
     </div>
