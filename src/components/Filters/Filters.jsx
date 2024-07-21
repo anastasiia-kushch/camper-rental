@@ -5,6 +5,7 @@ import LocationIcon from '../LocationIcon/LocationIcon';
 import { Icon } from '../Icons/Icons';
 import css from './Filters.module.css';
 import clsx from 'clsx';
+import toast from 'react-hot-toast';
 
 const equipment = [
   { name: 'ac', label: 'AC', icon: <Icon id="icon-ac" /> },
@@ -20,7 +21,7 @@ const type = [
   { name: 'alcove', label: 'Alcove', icon: <Icon id="icon-alcove" /> },
 ];
 
-export default function Filters() {
+export default function Filters({ onSubmit }) {
   const [locationSelected, setLocationSelected] = useState(false);
 
   const handleLocationChange = () => {
@@ -43,10 +44,29 @@ export default function Filters() {
     },
   };
 
-  const validationSchema = Yup.object({});
+  const validationSchema = Yup.object({
+    location: Yup.string().trim(),
+    filters: Yup.object().shape({
+      ac: Yup.boolean(),
+      automatic: Yup.boolean(),
+      kitchen: Yup.boolean(),
+      tv: Yup.boolean(),
+      wc: Yup.boolean(),
+    }),
+    vehicleType: Yup.object().shape({
+      van: Yup.boolean(),
+      fully: Yup.boolean(),
+      alcove: Yup.boolean(),
+    }),
+  });
 
-  const handleSubmit = (values) => {
-    console.log(values);
+  const handleSubmit = (values, { resetForm }) => {
+    if (values.location.trim() !== '') {
+      onSubmit(values);
+    } else {
+      toast.error('Something went wrong... Try again!');
+    }
+    resetForm();
   };
 
   return (

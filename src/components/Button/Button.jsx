@@ -6,6 +6,7 @@ export const Button = ({ text, type }) => {
     [css.search]: type === 'search',
     [css.loadMore]: type === 'loadMore',
     [css.bookNow]: type === 'bookNow',
+    [css.showMore]: type === 'showMore',
   });
 
   return <button className={clsx(css.button, typeClass)}>{text}</button>;

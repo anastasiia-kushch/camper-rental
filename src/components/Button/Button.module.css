@@ -4,6 +4,7 @@
   line-height: 1.5;
   letter-spacing: -0.005em;
   border-radius: 200px;
+  width: max-content;
 }
 
 .search {
@@ -15,6 +16,19 @@
 
 .search:hover,
 .search:focus {
+  background-color: var(--dark-red);
+}
+
+.showMore {
+  padding: 16px 40px;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+}
+
+.showMore:hover,
+.showMore:focus {
   background-color: var(--dark-red);
 }
 

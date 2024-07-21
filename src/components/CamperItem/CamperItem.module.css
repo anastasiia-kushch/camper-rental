@@ -10,6 +10,7 @@
   width: 290px;
   height: 310px;
   border-radius: 10px;
+  background-color: rgba(16, 24, 40, 0.2);
 }
 
 .content {
@@ -28,5 +29,21 @@
 .secondSec {
   display: flex;
   gap: 16px;
+  margin-bottom: 24px;
+}
+
+.description {
+  color: var(--light-blue);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 525px;
+  margin-bottom: 24px;
+}
+
+.features {
+  width: 526px;
+  height: 96px;
+  background-color: rgba(16, 24, 40, 0.2);
   margin-bottom: 24px;
 }
