@@ -8,9 +8,10 @@
 
 .img {
   width: 290px;
-  height: 310px;
   border-radius: 10px;
   background-color: rgba(16, 24, 40, 0.2);
+  object-fit: cover;
+  object-position: 70% 60%;
 }
 
 .content {
@@ -26,10 +27,46 @@
   margin-bottom: 8px;
 }
 
+.favCont {
+  display: flex;
+  gap: 9px;
+}
+
+.iconCont {
+  cursor: pointer;
+}
+
+.iconHeart {
+  stroke: var(--dark-blue);
+  fill: none;
+}
+
+.iconFavorite {
+  fill: var(--red);
+  stroke: none;
+}
+
+.iconCont:hover {
+  cursor: pointer;
+}
+
 .secondSec {
   display: flex;
   gap: 16px;
   margin-bottom: 24px;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  text-decoration: underline;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  gap: 4px;
+  align-items: center;
 }
 
 .description {
@@ -46,4 +83,45 @@
   height: 96px;
   background-color: rgba(16, 24, 40, 0.2);
   margin-bottom: 24px;
+}
+
+.featuresList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.feature {
+  padding: 12px 18px;
+  background-color: #f2f4f7;
+  border: none;
+  border-radius: 100px;
+  width: max-content;
+  display: flex;
+  gap: 8px;
+}
+
+.text {
+  text-transform: capitalize;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  border-radius: 200px;
+  width: max-content;
+  padding: 16px 40px;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--dark-red);
 }

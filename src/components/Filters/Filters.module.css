@@ -23,7 +23,7 @@
 .locationIcon {
   position: absolute;
   top: 50%;
-  left: 8px;
+  left: 18px;
   transform: translateY(-50%);
 }
 

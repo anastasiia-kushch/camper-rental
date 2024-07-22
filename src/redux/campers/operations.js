@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 export const getCampers = createAsyncThunk(
   'camper/fetchAll',
@@ -10,6 +11,7 @@ export const getCampers = createAsyncThunk(
       );
       return response.data;
     } catch (error) {
+      toast.error(error.message);
       return thunkAPI.rejectWithValue(error.message);
     }
   }

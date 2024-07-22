@@ -1,7 +1,6 @@
 import { Form, Formik, Field } from 'formik';
 import { useState } from 'react';
 import * as Yup from 'yup';
-import LocationIcon from '../LocationIcon/LocationIcon';
 import { Icon } from '../Icons/Icons';
 import css from './Filters.module.css';
 import clsx from 'clsx';
@@ -83,9 +82,23 @@ export default function Filters({ onSubmit }) {
             </label>
             <div className={css.locationCont}>
               <div className={css.locationIcon}>
-                <LocationIcon
-                  color={locationSelected ? '#101828' : 'rgba(16, 24, 40, 0.6)'}
-                />
+                {locationSelected ? (
+                  <Icon
+                    id="icon-location"
+                    stroke={'#101828'}
+                    fill={'none'}
+                    width={'16'}
+                    height={'16'}
+                  />
+                ) : (
+                  <Icon
+                    id="icon-location"
+                    stroke={'rgba(16, 24, 40, 0.6)'}
+                    fill={'none'}
+                    width={'16'}
+                    height={'16'}
+                  />
+                )}
               </div>
               <Field
                 id="location"
