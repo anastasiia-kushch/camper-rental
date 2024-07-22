@@ -1,8 +1,26 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Camper Rental
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Camper Rental is a website designed to simplify the process of renting campers. Users can explore available campers, view detailed information, and make reservations.
+
+## Site Navigation
+
+-   **Home**: Introduction to the service, featured campers, and promotional content.
+-   **Catalog**: List of available campers with search and filter options.
+-   **Favorite**: A list of your favorite campers.
+
+## Features
+
+-   **Search & Filters**: Refine your search with various filters, including location, equipment (AC, TV, kitchen, etc.), and vehicle type.
+-   **Booking System**: Reserve the most suitable camper.
+-   **Reviews**: Customer reviews and ratings for each camper.
+-   **Camper Details**: Detailed specifications and features of each camper.
+
+## Tools and Technologies
+
+-   **Frontend**: React, HTML, CSS, JavaScript
+-   **API**: [MockAPI](https://mockapi.io/)
+-   **Build Tool**: Vite
+-   **Version Control**: Git
