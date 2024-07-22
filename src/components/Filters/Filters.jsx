@@ -60,11 +60,7 @@ export default function Filters({ onSubmit }) {
   });
 
   const handleSubmit = (values, { resetForm }) => {
-    if (values.location.trim() !== '') {
-      onSubmit(values);
-    } else {
-      toast.error('Something went wrong... Try again!');
-    }
+    onSubmit(values);
     resetForm();
   };
 
@@ -73,6 +69,7 @@ export default function Filters({ onSubmit }) {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
+      validateOnChange={false}
     >
       {({ values }) => (
         <Form className={css.formCont}>

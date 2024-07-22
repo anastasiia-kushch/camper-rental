@@ -1,0 +1,97 @@
+.mainCont {
+  padding: 100px 65px;
+}
+
+.favList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.favItem {
+  box-sizing: border-box;
+  padding: 18px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.img {
+  width: 300px;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  text-decoration: underline;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.secondSec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.buttonShow {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  border-radius: 200px;
+  width: max-content;
+  padding: 6px 20px;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+}
+
+.buttonShow:hover,
+.buttonShow:focus {
+  background-color: var(--dark-red);
+}
+
+.buttonDelete {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  border-radius: 200px;
+  width: max-content;
+  font-size: 16px;
+  padding: 6px 32px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  color: var(--dark-blue);
+}
+
+.buttonDelete:hover,
+.buttonDelete:focus {
+  border-color: var(--red);
+}

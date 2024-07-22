@@ -1,0 +1,46 @@
+.cont {
+  position: relative;
+}
+
+.navList {
+  list-style-type: none;
+  position: absolute;
+  top: 30px;
+  right: 65px;
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.navItem {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--dark-blue);
+  position: relative;
+}
+
+.active {
+  color: var(--red);
+}
+
+.navItem:hover,
+.navItem:focus {
+  color: var(--red);
+}
+
+.navItem::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navItem.active::after {
+  width: 100%;
+}

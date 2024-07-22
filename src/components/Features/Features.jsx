@@ -17,8 +17,8 @@ export default function Features({ data }) {
 
   function formatText(text) {
     return text
-      .replace(/([a-z])([A-Z])/g, '$1 $2') // Вставить пробел перед заглавной буквой
-      .replace(/^./, (str) => str.toUpperCase()); // Сделать первую букву заглавной
+      .replace(/([a-z])([A-Z])/g, '$1 $2')
+      .replace(/^./, (str) => str.toUpperCase());
   }
   return (
     <div className={css.mainCont}>

@@ -28,23 +28,19 @@ export default function CamperList() {
   }, [dispatch]);
 
   useEffect(() => {
-    if (campers) {
-      setFilteredCampers(campers);
-    }
+    setFilteredCampers(campers);
   }, [campers]);
+
+  const handleSearch = (query) => {
+    const filtered = filteredCampers.filter((camper) =>
+      camper.location.toLowerCase().includes(query.location.toLowerCase())
+    );
+    setFilteredCampers(filtered);
+    setVisibleCampers(4);
+  };
 
   const handleLoadMore = () => {
     setVisibleCampers((prevCount) => prevCount + 4);
-  };
-
-  const handleSearch = (query) => {
-    if (campers) {
-      const filtered = campers.filter((camper) =>
-        camper.location.toLowerCase().includes(query.toLowerCase())
-      );
-      setFilteredCampers(filtered);
-      setVisibleCampers(4);
-    }
   };
 
   const openModal = (camper) => {
@@ -74,8 +70,8 @@ export default function CamperList() {
           ))}
         </ul>
         {visibleCampers < filteredCampers.length && (
-          <button className={css.button} onClick={handleLoadMore}>
-            Load more
+          <button className={css.loadMoreBtn} onClick={handleLoadMore}>
+            Load More
           </button>
         )}
       </div>

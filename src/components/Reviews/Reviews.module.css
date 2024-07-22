@@ -1,0 +1,53 @@
+.mainCont {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px;
+}
+
+.reviewsCont {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.userIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #f2f4f7;
+  color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 5px;
+}
+
+.comment {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--light-blue);
+}

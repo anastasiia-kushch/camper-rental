@@ -24,7 +24,6 @@ export const store = configureStore({
     favorite: persistReducer(favoritePersistConfig, campersReducer),
     booking: bookingReducer,
   },
-
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

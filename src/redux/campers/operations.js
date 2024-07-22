@@ -7,7 +7,7 @@ export const getCampers = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const response = await axios.get(
-        'https://6602771b9d7276a755534b70.mockapi.io/adverts'
+        'https://6602771b9d7276a755534b70.mockapi.io/adverts?page=1&limit=4'
       );
       return response.data;
     } catch (error) {
